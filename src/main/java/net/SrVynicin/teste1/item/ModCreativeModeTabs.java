@@ -1,6 +1,7 @@
 package net.SrVynicin.teste1.item;
 
 import net.SrVynicin.teste1.Teste1;
+import net.SrVynicin.teste1.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,9 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.Sapphire.get());
                         pOutput.accept(ModItems.Raw_Sapphire.get());
+
+                        pOutput.accept(ModBlocks.Sapphire_Block.get());
+                        pOutput.accept(ModBlocks.Raw_Sapphire_Block.get());
                     })
                     .build());
 
