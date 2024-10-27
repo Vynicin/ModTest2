@@ -16,11 +16,8 @@ import org.slf4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Teste1.MOD_ID)
 public class Teste1 {
-
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "teste1";
-    // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public Teste1(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
